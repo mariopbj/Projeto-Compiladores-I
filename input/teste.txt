@@ -1,15 +1,15 @@
-PROGRAM teste
+PROGRAM teste;
 
 vAr x : INTEGER;
 
 begiN
 
-X := 10 + 20;
+X := (10 + 20) * 8 - 7;
 
 wrIte(x);
 
 // teste comentario
 
-write("Olá Mundo");
+write("Olá Mundo")
 
 end.
