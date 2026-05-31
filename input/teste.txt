@@ -1,0 +1,15 @@
+PROGRAM teste
+
+vAr x : INTEGER;
+
+begiN
+
+X := 10 + 20;
+
+wrIte(x);
+
+// teste comentario
+
+write("Olá Mundo");
+
+end.
