@@ -1,4 +1,4 @@
-grammar MiniLangLexer;
+lexer grammar MiniLangLexer;
 
 @lexer::members {
 
@@ -26,6 +26,7 @@ VAR : [Vv][Aa][Rr];
 FALSE : [Ff][Aa][Ll][Ss][Ee];
 TRUE : [Tt][Rr][Uu][Ee];
 WRITE : [Ww][Rr][Ii][Tt][Ee];
+STRING : [Ss][Tt][Rr][Ii][Nn][Gg];
 
 // Comentarios
 
@@ -54,7 +55,7 @@ VIG : ',';
 ABPAR : '(';
 FPAR : ')';
 
-// Strings
+// Cadeia
 
 CADEIA : '"' (~["\r\n])* '"';
 
@@ -94,5 +95,3 @@ EB : [ \t\r\n]+ -> skip;
 // Erro léxico
 
 ERRO : . { erroLexico(); };
-
-programa : EOF ;
