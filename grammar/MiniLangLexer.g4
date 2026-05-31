@@ -27,6 +27,9 @@ FALSE : [Ff][Aa][Ll][Ss][Ee];
 TRUE : [Tt][Rr][Uu][Ee];
 WRITE : [Ww][Rr][Ii][Tt][Ee];
 STRING : [Ss][Tt][Rr][Ii][Nn][Gg];
+IF : [Ii][Ff];
+THEN : [Tt][Hh][Ee][Nn];
+ELSE : [Ee][Ll][Ss][Ee];
 
 // Comentarios
 
