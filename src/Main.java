@@ -9,6 +9,8 @@ public class Main {
             CharStream input =
                 CharStreams.fromFileName("input/teste.txt");
 
+            System.out.println("=== ANALISE LEXICA ===");
+
             MiniLangLexer lexer =
                 new MiniLangLexer(input);
 
@@ -93,6 +95,34 @@ public class Main {
                         + " | TIPO: " + tipo
                     );
                 }
+            }
+            
+
+            System.out.println("\n=== ANALISE SINTATICA ===");
+
+            input = CharStreams.fromFileName("input/teste.txt");
+
+            lexer = new MiniLangLexer(input);
+
+            CommonTokenStream tokens =
+                new CommonTokenStream(lexer);
+
+            MiniLangParser parser =
+                new MiniLangParser(tokens);
+
+            parser.prog();
+
+            if (parser.getNumberOfSyntaxErrors() == 0) {
+
+                System.out.println(
+                    "Programa reconhecido com sucesso"
+                );
+
+            } else {
+
+                System.out.println(
+                    "Programa contém erros sintáticos"
+                );
             }
 
         } catch (Exception e) {
