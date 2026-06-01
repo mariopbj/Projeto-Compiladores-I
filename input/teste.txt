@@ -6,10 +6,14 @@ begiN
 
 X := (10 + 20) * 8 - 7;
 
+    IF TRUE THEN
+        WRITE("OK");
+
 wrIte(x);
 
 // teste comentario
 
-write("Olá Mundo")
+WHILE TRUE DO
+    write("Olá Mundo")
 
 end.
