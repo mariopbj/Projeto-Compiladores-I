@@ -1,15 +1,20 @@
 PROGRAM teste;
 
-vAr x : INTEGER;
+VAR
+    x : INTEGER;
+    y : INTEGER;
+    z : BOOLEAN;
 
 begiN
 
-X := (10 + 20) * 8 - 7;
+x := 10;
+y := 20;
 
-    IF TRUE THEN
-        WRITE("OK");
+IF x < y AND y > 0 THEN
+    WRITE("AND OK");
 
-wrIte(x);
+IF x > y OR y > 0 THEN
+    WRITE("OR OK");
 
 // teste comentario
 

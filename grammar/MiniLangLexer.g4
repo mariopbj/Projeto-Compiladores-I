@@ -70,7 +70,7 @@ ID : [a-zA-Z][a-zA-Z0-9]* {
           }
       };
 
-CTE : [0-9]+ {
+CTE : [+-]?[0-9]+ {
         try {
             int valor = Integer.parseInt(getText());
 

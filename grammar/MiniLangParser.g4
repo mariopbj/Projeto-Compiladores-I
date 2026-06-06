@@ -32,7 +32,7 @@ elemW: expr | CADEIA;
 
 cmdAtrib: ID ATRIB expr;
 
-expr: exprRel;
+expr: exprRel | expr OPLOG exprRel;
 exprRel: exprAd | exprAd OPREL exprAd;
 exprAd: exprMult | exprAd OPAD exprMult;
 exprMult: fator | exprMult OPMULT fator;
