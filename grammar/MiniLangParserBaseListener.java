@@ -123,18 +123,6 @@ public class MiniLangParserBaseListener implements MiniLangParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCmdOthers(MiniLangParser.CmdOthersContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCmdOthers(MiniLangParser.CmdOthersContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterCmdIf(MiniLangParser.CmdIfContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -147,30 +135,6 @@ public class MiniLangParserBaseListener implements MiniLangParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCmdIfMatched(MiniLangParser.CmdIfMatchedContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCmdIfMatched(MiniLangParser.CmdIfMatchedContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterCmdIfUnmatched(MiniLangParser.CmdIfUnmatchedContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCmdIfUnmatched(MiniLangParser.CmdIfUnmatchedContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterCmdWhile(MiniLangParser.CmdWhileContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -178,6 +142,18 @@ public class MiniLangParserBaseListener implements MiniLangParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCmdWhile(MiniLangParser.CmdWhileContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBloco(MiniLangParser.BlocoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBloco(MiniLangParser.BlocoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

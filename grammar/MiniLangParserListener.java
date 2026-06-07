@@ -97,16 +97,6 @@ public interface MiniLangParserListener extends ParseTreeListener {
 	 */
 	void exitCmd(MiniLangParser.CmdContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MiniLangParser#cmdOthers}.
-	 * @param ctx the parse tree
-	 */
-	void enterCmdOthers(MiniLangParser.CmdOthersContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link MiniLangParser#cmdOthers}.
-	 * @param ctx the parse tree
-	 */
-	void exitCmdOthers(MiniLangParser.CmdOthersContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link MiniLangParser#cmdIf}.
 	 * @param ctx the parse tree
 	 */
@@ -117,26 +107,6 @@ public interface MiniLangParserListener extends ParseTreeListener {
 	 */
 	void exitCmdIf(MiniLangParser.CmdIfContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MiniLangParser#cmdIfMatched}.
-	 * @param ctx the parse tree
-	 */
-	void enterCmdIfMatched(MiniLangParser.CmdIfMatchedContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link MiniLangParser#cmdIfMatched}.
-	 * @param ctx the parse tree
-	 */
-	void exitCmdIfMatched(MiniLangParser.CmdIfMatchedContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link MiniLangParser#cmdIfUnmatched}.
-	 * @param ctx the parse tree
-	 */
-	void enterCmdIfUnmatched(MiniLangParser.CmdIfUnmatchedContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link MiniLangParser#cmdIfUnmatched}.
-	 * @param ctx the parse tree
-	 */
-	void exitCmdIfUnmatched(MiniLangParser.CmdIfUnmatchedContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link MiniLangParser#cmdWhile}.
 	 * @param ctx the parse tree
 	 */
@@ -146,6 +116,16 @@ public interface MiniLangParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCmdWhile(MiniLangParser.CmdWhileContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MiniLangParser#bloco}.
+	 * @param ctx the parse tree
+	 */
+	void enterBloco(MiniLangParser.BlocoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MiniLangParser#bloco}.
+	 * @param ctx the parse tree
+	 */
+	void exitBloco(MiniLangParser.BlocoContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link MiniLangParser#cmdRead}.
 	 * @param ctx the parse tree

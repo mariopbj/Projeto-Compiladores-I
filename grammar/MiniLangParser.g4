@@ -14,15 +14,13 @@ tip: INTEGER | BOOLEAN | STRING;
 
 cmdComp: BEGIN listCmd END;
 listCmd: cmd (PVIG cmd)*;
-cmd: cmdIf | cmdOthers;
+cmd: cmdIf | cmdWhile | cmdRead | cmdWrite | cmdAtrib | cmdComp;
 
-cmdOthers: cmdWhile | cmdRead | cmdWrite | cmdAtrib | cmdComp;
-cmdIf: cmdIfMatched | cmdIfUnmatched;
+cmdIf: IF ABPAR expr FPAR THEN bloco | IF ABPAR expr FPAR THEN bloco ELSE bloco;
 
-cmdIfMatched: IF expr THEN cmdIfMatched ELSE cmdIfMatched | cmdOthers;
-cmdIfUnmatched: IF expr THEN cmd | IF expr THEN cmdIfMatched ELSE cmdIfUnmatched;
+cmdWhile: WHILE ABPAR expr FPAR DO bloco;
 
-cmdWhile: WHILE expr DO cmd;
+bloco: ABCHA listCmd FCHA;
 
 cmdRead: READ ABPAR listId FPAR;
 

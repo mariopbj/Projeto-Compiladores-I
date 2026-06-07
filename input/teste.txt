@@ -3,22 +3,17 @@ PROGRAM teste;
 VAR
     x : INTEGER;
     y : INTEGER;
-    z : BOOLEAN;
 
-begiN
+BEGIN
 
 x := 10;
 y := 20;
 
-IF x < y AND y > 0 THEN
-    WRITE("AND OK");
+IF (x < y AND y > 0) THEN {
+    WRITE("test1");
+    WHILE (TRUE) DO {
+        WRITE ("teste2")
+    }
+}
 
-IF x > y OR y > 0 THEN
-    WRITE("OR OK");
-
-// teste comentario
-
-WHILE TRUE DO
-    write("Olá Mundo")
-
-end.
+END.

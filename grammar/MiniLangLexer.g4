@@ -57,6 +57,8 @@ DPONTOS : ':';
 VIG : ',';
 ABPAR : '(';
 FPAR : ')';
+ABCHA : '{';
+FCHA  : '}';
 
 // Cadeia
 
